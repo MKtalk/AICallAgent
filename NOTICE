@@ -1,0 +1,54 @@
+AI Call Agent
+Copyright 2026 AI Call Agent Contributors
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+========================================================================
+Third-Party Software Notices
+========================================================================
+
+1. Google AI Edge LiteRT-LM (`com.google.ai.edge.litertlm:litertlm-android`)
+   Licensed under the Apache License, Version 2.0.
+
+2. Transitive Dependencies (`com.google.code.gson:gson`, `com.google.errorprone:error_prone_annotations`,
+   `org.jetbrains.kotlin:kotlin-stdlib`, `org.jetbrains.kotlin:kotlin-reflect`,
+   `org.jetbrains.kotlinx:kotlinx-coroutines-android`, `org.jetbrains.kotlinx:kotlinx-coroutines-core`,
+   `org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm`, `org.jetbrains:annotations`)
+   Licensed under the Apache License, Version 2.0.
+
+3. Test-Scope Dependencies (not bundled in the application binary)
+   - JUnit 4 (`junit:junit`): Licensed under the Eclipse Public License 1.0 (EPL-1.0).
+   - Hamcrest Core (`org.hamcrest:hamcrest-core`): Licensed under the BSD 3-Clause License.
+
+4. Gradle Wrapper (`gradle/wrapper/gradle-wrapper.jar`, `gradlew`, `gradlew.bat`)
+   Licensed under the Apache License, Version 2.0.
+
+Note on Distribution Scope:
+This repository includes the project source code and the Gradle Wrapper (`gradle/wrapper/gradle-wrapper.jar`),
+and does not distribute compiled application APK binaries. Application runtime dependencies are resolved from
+Maven repositories at build time. If you distribute compiled APK binaries, you must also include the applicable
+license texts and upstream NOTICE files (including native components inside `litertlm-android`) with your
+binary distribution.
+
+========================================================================
+Model Weights Notice
+========================================================================
+
+This repository does NOT distribute any LLM model weights (`.litertlm`).
+Users who download and load Gemma model files onto their devices must comply
+with the applicable Google Gemma Terms of Use (https://ai.google.dev/gemma/terms).
+
+========================================================================
+Trademark & Operational Disclaimer
+========================================================================
+
+- Samsung, Galaxy, One UI, and Bixby Text Call are trademarks of Samsung Electronics Co., Ltd.
+  This project is an independent open-source project and is not affiliated with, endorsed by,
+  or sponsored by Samsung Electronics Co., Ltd. or Google LLC.
+- Users are solely responsible for complying with applicable telecommunications, call recording,
+  and automated call answering laws in their jurisdiction, including notifying callers when an
+  automated agent answers a call.

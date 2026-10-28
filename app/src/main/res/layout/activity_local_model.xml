@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="24dp">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="@string/local_title" android:textSize="22sp" android:textStyle="bold" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="16dp" android:text="@string/local_scope" />
+        <Button android:id="@+id/local_pick" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="16dp" android:text="@string/local_pick" />
+        <TextView android:id="@+id/local_selection" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="@string/local_no_selection" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="16dp" android:labelFor="@id/local_hash" android:text="@string/local_hash_label" />
+        <EditText android:id="@+id/local_hash" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:inputType="textVisiblePassword" android:singleLine="true" android:minHeight="48dp"
+            android:maxLength="64" android:importantForAutofill="no" />
+        <Button android:id="@+id/local_import" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="@string/local_import" />
+        <TextView android:id="@+id/local_model_info" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="16dp" android:text="@string/local_missing" />
+        <RadioGroup android:id="@+id/local_backend" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:checkedButton="@id/local_cpu">
+            <RadioButton android:id="@+id/local_cpu" android:layout_width="wrap_content" android:layout_height="48dp"
+                android:text="@string/local_cpu" />
+            <RadioButton android:id="@+id/local_gpu" android:layout_width="wrap_content" android:layout_height="48dp"
+                android:text="@string/local_gpu" />
+        </RadioGroup>
+        <Button android:id="@+id/local_load" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="@string/local_load" />
+        <Button android:id="@+id/local_generate" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="@string/local_generate" />
+        <Button android:id="@+id/local_cancel" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="@string/local_cancel" />
+        <Button android:id="@+id/local_release" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="@string/local_release" />
+        <TextView android:id="@+id/local_status" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="16dp" android:accessibilityLiveRegion="polite" />
+        <TextView android:id="@+id/local_answer" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="16dp" android:textSize="18sp" android:saveEnabled="false" />
+        <Button android:id="@+id/local_back" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="16dp" android:text="@string/back_to_main" />
+    </LinearLayout>
+</ScrollView>
